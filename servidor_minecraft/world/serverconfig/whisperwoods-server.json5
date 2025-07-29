@@ -1,0 +1,437 @@
+// 
+{
+	"entities": {
+		"moth": {
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 10,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 3,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"biomeswevegone:aspen_boreal",
+					"biomeswevegone:frosted_coniferous_forest",
+					"biomeswevegone:eroded_borealis",
+					"minecraft:sparse_jungle",
+					"minecraft:grove",
+					"biomeswevegone:howling_peaks",
+					"biomeswevegone:zelkova_forest",
+					"natures_spirit:sugi_forest",
+					"biomeswevegone:orchard",
+					"minecraft:old_growth_spruce_taiga",
+					"minecraft:old_growth_birch_forest",
+					"biomeswevegone:skyrise_vale",
+					"nyctophobia:eroded_haunted_forest",
+					"natures_spirit:windswept_sugi_forest",
+					"natures_spirit:blooming_sugi_forest",
+					"minecraft:taiga",
+					"minecraft:birch_forest",
+					"natures_spirit:maple_woodlands",
+					"natures_spirit:fir_forest",
+					"minecraft:flower_forest",
+					"biomeswevegone:enchanted_tangle",
+					"nyctophobia:haunted_forest",
+					"natures_spirit:redwood_forest",
+					"biomeswevegone:overgrowth_woodlands",
+					"minecraft:forest",
+					"biomeswevegone:weeping_witch_forest",
+					"biomeswevegone:canadian_shield",
+					"minecraft:swamp",
+					"biomeswevegone:cypress_swamplands",
+					"minecraft:dark_forest",
+					"promenade:cotton_sakura_grove",
+					"minecraft:snowy_taiga",
+					"minecraft:windswept_forest",
+					"biomeswevegone:ebony_woods",
+					"biomeswevegone:cypress_wetlands",
+					"promenade:carnelian_treeway",
+					"biomeswevegone:forgotten_forest",
+					"natures_spirit:aspen_forest",
+					"nyctophobia:haunted_lakes",
+					"nyctophobia:deep_dark_forest",
+					"biomeswevegone:dacite_ridges",
+					"biomeswevegone:sakura_grove",
+					"biomeswevegone:bayou",
+					"biomeswevegone:coniferous_forest",
+					"biomeswevegone:redwood_thicket",
+					"natures_spirit:wisteria_forest",
+					"biomeswevegone:white_mangrove_marshes",
+					"promenade:blush_sakura_grove",
+					"minecraft:old_growth_pine_taiga",
+					"natures_spirit:coniferous_covert",
+					"biomeswevegone:cika_woods",
+					"biomeswevegone:black_forest",
+					"natures_spirit:floral_ridges",
+					"minecraft:mangrove_swamp"
+				],
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			},
+			// How many moths required to destroy a torch - Disabled if set to 0
+			"moths_to_destroy_torch": 5
+		},
+		"hidebehind": {
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 8,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 1,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"biomeswevegone:canadian_shield",
+					"biomeswevegone:aspen_boreal",
+					"biomeswevegone:frosted_coniferous_forest",
+					"minecraft:dark_forest",
+					"biomeswevegone:eroded_borealis",
+					"minecraft:sparse_jungle",
+					"promenade:cotton_sakura_grove",
+					"minecraft:snowy_taiga",
+					"minecraft:grove",
+					"biomeswevegone:howling_peaks",
+					"biomeswevegone:zelkova_forest",
+					"minecraft:windswept_forest",
+					"biomeswevegone:ebony_woods",
+					"natures_spirit:sugi_forest",
+					"biomeswevegone:orchard",
+					"promenade:carnelian_treeway",
+					"biomeswevegone:forgotten_forest",
+					"natures_spirit:aspen_forest",
+					"nyctophobia:haunted_lakes",
+					"minecraft:old_growth_spruce_taiga",
+					"nyctophobia:deep_dark_forest",
+					"biomeswevegone:dacite_ridges",
+					"minecraft:old_growth_birch_forest",
+					"biomeswevegone:skyrise_vale",
+					"biomeswevegone:sakura_grove",
+					"biomeswevegone:coniferous_forest",
+					"nyctophobia:eroded_haunted_forest",
+					"natures_spirit:windswept_sugi_forest",
+					"natures_spirit:blooming_sugi_forest",
+					"minecraft:taiga",
+					"biomeswevegone:redwood_thicket",
+					"minecraft:birch_forest",
+					"natures_spirit:wisteria_forest",
+					"natures_spirit:maple_woodlands",
+					"natures_spirit:fir_forest",
+					"minecraft:flower_forest",
+					"biomeswevegone:enchanted_tangle",
+					"promenade:blush_sakura_grove",
+					"nyctophobia:haunted_forest",
+					"minecraft:old_growth_pine_taiga",
+					"natures_spirit:redwood_forest",
+					"biomeswevegone:overgrowth_woodlands",
+					"natures_spirit:coniferous_covert",
+					"biomeswevegone:cika_woods",
+					"minecraft:forest",
+					"biomeswevegone:black_forest",
+					"natures_spirit:floral_ridges",
+					"biomeswevegone:weeping_witch_forest"
+				],
+				// Enables biome based variant selection. This will make this entity choose variants tailored to the biome they spawn in (Only applies to natural spawns)
+				"biome_based_variants": true,
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			}
+		},
+		"wisp": {
+			// Allows the entity to despawn freely when no players are nearby, like vanilla monsters do
+			"can_despawn": false,
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 13,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 3,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"biomeswevegone:aspen_boreal",
+					"biomeswevegone:frosted_coniferous_forest",
+					"biomeswevegone:eroded_borealis",
+					"minecraft:sparse_jungle",
+					"minecraft:grove",
+					"biomeswevegone:howling_peaks",
+					"biomeswevegone:zelkova_forest",
+					"natures_spirit:sugi_forest",
+					"biomeswevegone:orchard",
+					"minecraft:old_growth_spruce_taiga",
+					"minecraft:old_growth_birch_forest",
+					"biomeswevegone:skyrise_vale",
+					"nyctophobia:eroded_haunted_forest",
+					"natures_spirit:windswept_sugi_forest",
+					"natures_spirit:blooming_sugi_forest",
+					"minecraft:taiga",
+					"minecraft:birch_forest",
+					"natures_spirit:maple_woodlands",
+					"natures_spirit:fir_forest",
+					"minecraft:flower_forest",
+					"biomeswevegone:enchanted_tangle",
+					"nyctophobia:haunted_forest",
+					"natures_spirit:redwood_forest",
+					"biomeswevegone:overgrowth_woodlands",
+					"minecraft:forest",
+					"biomeswevegone:weeping_witch_forest",
+					"biomeswevegone:canadian_shield",
+					"minecraft:swamp",
+					"biomeswevegone:cypress_swamplands",
+					"minecraft:dark_forest",
+					"promenade:cotton_sakura_grove",
+					"minecraft:snowy_taiga",
+					"minecraft:windswept_forest",
+					"biomeswevegone:ebony_woods",
+					"biomeswevegone:cypress_wetlands",
+					"promenade:carnelian_treeway",
+					"biomeswevegone:forgotten_forest",
+					"natures_spirit:aspen_forest",
+					"nyctophobia:haunted_lakes",
+					"nyctophobia:deep_dark_forest",
+					"biomeswevegone:dacite_ridges",
+					"biomeswevegone:sakura_grove",
+					"biomeswevegone:bayou",
+					"biomeswevegone:coniferous_forest",
+					"minecraft:crimson_forest",
+					"biomeswevegone:redwood_thicket",
+					"natures_spirit:wisteria_forest",
+					"biomeswevegone:white_mangrove_marshes",
+					"minecraft:warped_forest",
+					"promenade:blush_sakura_grove",
+					"minecraft:old_growth_pine_taiga",
+					"natures_spirit:coniferous_covert",
+					"biomeswevegone:cika_woods",
+					"biomeswevegone:black_forest",
+					"natures_spirit:floral_ridges",
+					"minecraft:mangrove_swamp"
+				],
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			},
+			// Chance of wisp being hostile (soul stealer). Chance is a percentage out of 100. 0 is never, 100 is always
+			"hostile_chance": 12
+		},
+		"hirschgeist": {
+			// Allows the entity to despawn freely when no players are nearby, like vanilla monsters do
+			"can_despawn": false,
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 2,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 1,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"biomeswevegone:canadian_shield",
+					"biomeswevegone:aspen_boreal",
+					"biomeswevegone:frosted_coniferous_forest",
+					"minecraft:dark_forest",
+					"biomeswevegone:eroded_borealis",
+					"minecraft:sparse_jungle",
+					"promenade:cotton_sakura_grove",
+					"minecraft:snowy_taiga",
+					"minecraft:grove",
+					"biomeswevegone:howling_peaks",
+					"biomeswevegone:zelkova_forest",
+					"minecraft:windswept_forest",
+					"biomeswevegone:ebony_woods",
+					"natures_spirit:sugi_forest",
+					"biomeswevegone:orchard",
+					"promenade:carnelian_treeway",
+					"biomeswevegone:forgotten_forest",
+					"natures_spirit:aspen_forest",
+					"nyctophobia:haunted_lakes",
+					"minecraft:old_growth_spruce_taiga",
+					"nyctophobia:deep_dark_forest",
+					"biomeswevegone:dacite_ridges",
+					"minecraft:old_growth_birch_forest",
+					"biomeswevegone:skyrise_vale",
+					"biomeswevegone:sakura_grove",
+					"biomeswevegone:coniferous_forest",
+					"nyctophobia:eroded_haunted_forest",
+					"natures_spirit:windswept_sugi_forest",
+					"natures_spirit:blooming_sugi_forest",
+					"minecraft:taiga",
+					"biomeswevegone:redwood_thicket",
+					"minecraft:birch_forest",
+					"natures_spirit:wisteria_forest",
+					"natures_spirit:maple_woodlands",
+					"natures_spirit:fir_forest",
+					"minecraft:flower_forest",
+					"biomeswevegone:enchanted_tangle",
+					"promenade:blush_sakura_grove",
+					"nyctophobia:haunted_forest",
+					"minecraft:old_growth_pine_taiga",
+					"natures_spirit:redwood_forest",
+					"biomeswevegone:overgrowth_woodlands",
+					"natures_spirit:coniferous_covert",
+					"biomeswevegone:cika_woods",
+					"minecraft:forest",
+					"biomeswevegone:black_forest",
+					"natures_spirit:floral_ridges",
+					"biomeswevegone:weeping_witch_forest"
+				],
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			}
+		},
+		"zotzpyre": {
+			"spawning": {
+				// Enables natural spawning - More info on these options: https://minecraft.fandom.com/wiki/Spawn#Java_Edition
+				"spawn_naturally": true,
+				// The spawn weight compared to other entities (typically between 6-20)
+				"spawn_weight": 30,
+				// Minimum amount of entities in spawned groups
+				"minimum_group_size": 1,
+				// Maximum amount of entities in spawned groups - Must be greater or equal to min value
+				"maximum_group_size": 1,
+				// Enter biome IDs. Supports modded biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+				"spawn_biomes": [
+					"biomeswevegone:aspen_boreal",
+					"biomeswevegone:frosted_coniferous_forest",
+					"natures_spirit:sleeted_slopes",
+					"biomeswevegone:eroded_borealis",
+					"minecraft:cherry_grove",
+					"minecraft:snowy_beach",
+					"minecraft:sparse_jungle",
+					"natures_spirit:alpine_highlands",
+					"minecraft:grove",
+					"biomeswevegone:howling_peaks",
+					"biomeswevegone:zelkova_forest",
+					"natures_spirit:sugi_forest",
+					"biomeswevegone:dead_sea",
+					"biomeswevegone:orchard",
+					"minecraft:stony_peaks",
+					"minecraft:old_growth_spruce_taiga",
+					"biomeswevegone:fragment_jungle",
+					"minecraft:old_growth_birch_forest",
+					"nyctophobia:ancient_dead_coral_reef",
+					"biomeswevegone:skyrise_vale",
+					"nyctophobia:eroded_haunted_forest",
+					"natures_spirit:windswept_sugi_forest",
+					"natures_spirit:blooming_sugi_forest",
+					"minecraft:snowy_slopes",
+					"natures_spirit:snowcapped_red_peaks",
+					"minecraft:taiga",
+					"minecraft:birch_forest",
+					"natures_spirit:maple_woodlands",
+					"natures_spirit:fir_forest",
+					"minecraft:jungle",
+					"minecraft:flower_forest",
+					"biomeswevegone:enchanted_tangle",
+					"nyctophobia:haunted_forest",
+					"natures_spirit:redwood_forest",
+					"biomeswevegone:overgrowth_woodlands",
+					"minecraft:windswept_hills",
+					"minecraft:eroded_badlands",
+					"minecraft:forest",
+					"minecraft:jagged_peaks",
+					"natures_spirit:tropical_shores",
+					"biomeswevegone:weeping_witch_forest",
+					"biomeswevegone:canadian_shield",
+					"minecraft:swamp",
+					"promenade:glacarian_taiga",
+					"minecraft:meadow",
+					"biomeswevegone:cypress_swamplands",
+					"minecraft:dark_forest",
+					"minecraft:bamboo_jungle",
+					"biomeswevegone:crag_gardens",
+					"promenade:cotton_sakura_grove",
+					"minecraft:snowy_taiga",
+					"minecraft:stony_shore",
+					"minecraft:windswept_forest",
+					"biomeswevegone:tropical_rainforest",
+					"biomeswevegone:ebony_woods",
+					"natures_spirit:bamboo_wetlands",
+					"biomeswevegone:cypress_wetlands",
+					"biomeswevegone:jacaranda_jungle",
+					"promenade:carnelian_treeway",
+					"biomeswevegone:forgotten_forest",
+					"minecraft:frozen_peaks",
+					"biomeswevegone:rainbow_beach",
+					"minecraft:windswept_gravelly_hills",
+					"natures_spirit:aspen_forest",
+					"nyctophobia:haunted_lakes",
+					"biomeswevegone:basalt_barrera",
+					"nyctophobia:deep_dark_forest",
+					"biomeswevegone:dacite_ridges",
+					"biomeswevegone:sakura_grove",
+					"biomeswevegone:bayou",
+					"biomeswevegone:coniferous_forest",
+					"natures_spirit:blooming_highlands",
+					"natures_spirit:dusty_slopes",
+					"minecraft:snowy_plains",
+					"biomeswevegone:redwood_thicket",
+					"natures_spirit:wisteria_forest",
+					"minecraft:ice_spikes",
+					"natures_spirit:red_peaks",
+					"biomeswevegone:white_mangrove_marshes",
+					"promenade:blush_sakura_grove",
+					"biomeswevegone:frosted_taiga",
+					"minecraft:old_growth_pine_taiga",
+					"biomeswevegone:dacite_shore",
+					"biomeswevegone:maple_taiga",
+					"minecraft:windswept_savanna",
+					"natures_spirit:coniferous_covert",
+					"biomeswevegone:cika_woods",
+					"biomeswevegone:black_forest",
+					"natures_spirit:floral_ridges",
+					"minecraft:mangrove_swamp",
+					"minecraft:beach"
+				],
+				"spawn_costs": {
+					// Whether to use spawn costs in spawning or not
+					"use_spawn_costs": false,
+					// Cost to spawning algorithm per entity spawned
+					"cost_per_spawn": 1,
+					// Maximum cost the spawning algorithm can accrue for this entity
+					"maximum_cost_per_biome": 10,
+					// Enter biome IDs to use these costs in. Supports modded biomes. An empty list will use spawn_biomes https://minecraft.fandom.com/wiki/Biome#Biome_IDs
+					"spawn_cost_biomes": []
+				}
+			}
+		}
+	}
+}

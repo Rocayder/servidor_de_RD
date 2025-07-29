@@ -1,0 +1,12 @@
+{
+	version: 1
+	uuid: "b33aef2363c135629546ecfaae397c58"
+	name: "fahal_zz#b33aef23"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	claimed_rewards: { }
+	player_data: { }
+}

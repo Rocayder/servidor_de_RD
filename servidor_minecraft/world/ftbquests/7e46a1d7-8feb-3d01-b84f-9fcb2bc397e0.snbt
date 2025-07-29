@@ -1,0 +1,12 @@
+{
+	version: 1
+	uuid: "7e46a1d78feb3d01b84f9fcb2bc397e0"
+	name: "JxanderC#7e46a1d7"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	claimed_rewards: { }
+	player_data: { }
+}

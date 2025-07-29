@@ -1,0 +1,12 @@
+{
+	version: 1
+	uuid: "d9037dc85de23afa82538f4279844af2"
+	name: "Mixelanea#d9037dc8"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	claimed_rewards: { }
+	player_data: { }
+}
